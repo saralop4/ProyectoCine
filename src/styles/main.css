@@ -1,0 +1,36 @@
+.footer{
+    font-size: .875rem;
+}
+
+.footer__logo{
+    height: 0.95rem;
+}
+
+.footer__nav{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer__nav li{
+    position: relative;
+    padding: 0 1rem;
+}
+
+.footer__nav li:not(:last-child)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1em;
+    width: 1px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: currentColor;
+}
+
+.footer__social{
+    fill: red;
+}
+
