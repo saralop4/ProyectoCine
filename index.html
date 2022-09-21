@@ -1,140 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gran Plaza El Ensueño - Cinemark</title>
-    <meta name="description" content="Gran Plaza El Ensueño - Cinemark">
+    <meta name="description" content="Gran Plaza El Ensueño - Cinemark" />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <!-- JavaScript Bundle with Popper -->
-    <link rel="stylesheet" href="./src/styles/main.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg container">
-            <!-- Div Principal -->
-            <div class="container-fluid">
-               <!--   <div class="logo">  --> 
-                <a class="navbar-brand" href="#">
-                    <img src="./src/img/logo.svg" alt="logo">
-                </a>
-            <!--   </div>  --> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Div Nav -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    <div class="center">
-                        <!-- Div Nav Segundario -->
-
-                        <nav class="items">
-                            <a href="segundapagina.html">Cartelera</a>
-                            <a href="#">Estreno</a>
-                            <a href="#">Teatros</a>
-                            <a href="#">Contactanos</a>
-                        </nav>
-                    </div> <!-- Div Nav Segundario -->
-                    <div class="d-flex gap-2">
-                        <button class="btn btn-outline-danger">Registrar</button>
-                        <button class="btn btn-danger">Ingresar</button>
-                    </div>
-                </div> <!-- Div Nav -->
-            </div> <!-- Div Principal -->
-        </nav>
+      <nav class="navbar navbar-expand-lg container">
+        <!-- Div Principal -->
+        <div class="container-fluid">
+          <!--   <div class="logo">  -->
+          <a class="navbar-brand" href="/">
+            <img
+              src="./src/img/logo.svg"
+              alt="logo"
+              style="filter: brightness(10000%)"
+            />
+          </a>
+          <!--   </div>  -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Div Nav -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="center">
+              <!-- Div Nav Segundario -->
+              <nav class="items">
+                <a href="segundapagina.html">Cartelera</a>
+                <a href="#">Estreno</a>
+                <a href="#">Teatros</a>
+                <a href="#">Contactanos</a>
+              </nav>
+            </div>
+            <!-- Div Nav Segundario -->
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-light">Registrar</button>
+              <button class="btn btn-light">Ingresar</button>
+            </div>
+          </div>
+          <!-- Div Nav -->
+        </div>
+        <!-- Div Principal -->
+      </nav>
     </header>
     <main>
-        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="./src/img/slide-1.jpg" class="d-block w-100" alt="slide1">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./src/img/slide-2.jpg" class="d-block w-100" alt="slide2">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <section class="container py-5">
-            <h4 class="text-body">CARTELERA</h4>
-            <div class="d-flex justify-content-between gap-2 overflow-scroll">
-                <img src="./src/img/cartelera/barbaro.jpg" class="d-block w-25 h-auto" alt="barbaro">
-                <img src="./src/img/cartelera/el-beso-de-dios.jpg" class="d-block w-25 h-auto" alt="el beso de dios">
-                <img src="./src/img/cartelera/emergencia-en-el-aire.jpg" class="d-block w-25"
-                    alt="emergencia-en-el-aire">
-                <img src="./src/img/cartelera/la-chica-salvaje.jpg" class="d-block w-25 h-auto" alt="la-chica-salvaje">
-                <img src="./src/img/cartelera/boonie-bears-regreso-a-la-tierra.jpg" class="d-block w-25 h-auto"
-                    alt="boonie-bears-regreso-a-la-tierra">
-                <img src="./src/img/cartelera/olga.jpg" class="d-block w-25 h-auto" alt="olga">
-                <img src="./src/img/cartelera/pasaje-al-paraiso.jpg" class="d-block w-25 h-auto"
-                    alt="pasaje-al-paraiso">
-                <img src="./src/img/cartelera/olga.jpg" class="d-block w-25" alt="olga">
-            </div>
-        </section>
-        <section class="container pb-5">
-            <h4 class="text-body">PREVENTA / PRÓXIMOS ESTRENOS</h4>
-            <div class="d-flex justify-content-between gap-2 overflow-scroll">
-                <img src="./src/img/cartelera/barbaro.jpg" class="d-block w-25 h-auto" alt="barbaro">
-                <img src="./src/img/cartelera/el-beso-de-dios.jpg" class="d-block w-25 h-auto" alt="el beso de dios">
-                <img src="./src/img/cartelera/emergencia-en-el-aire.jpg" class="d-block w-25"
-                    alt="emergencia-en-el-aire">
-                <img src="./src/img/cartelera/la-chica-salvaje.jpg" class="d-block w-25 h-auto" alt="la-chica-salvaje">
-                <img src="./src/img/cartelera/boonie-bears-regreso-a-la-tierra.jpg" class="d-block w-25 h-auto"
-                    alt="boonie-bears-regreso-a-la-tierra">
-                <img src="./src/img/cartelera/olga.jpg" class="d-block w-25 h-auto" alt="olga">
-                <img src="./src/img/cartelera/pasaje-al-paraiso.jpg" class="d-block w-25 h-auto"
-                    alt="pasaje-al-paraiso">
-                <img src="./src/img/cartelera/olga.jpg" class="d-block w-25" alt="olga">
-            </div>
-        </section>
-
+      <section
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./src/img/slide-1.jpg"
+              class="d-block w-100"
+              alt="slide1"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="./src/img/slide-2.jpg"
+              class="d-block w-100"
+              alt="slide2"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="container py-5">
+        <h4 class="text-body">CARTELERA</h4>
+        <div class="d-flex justify-content-between gap-2 overflow-scroll">
+          <img
+            src="./src/img/cartelera/barbaro.jpg"
+            class="d-block w-25 h-auto"
+            alt="barbaro"
+          />
+          <img
+            src="./src/img/cartelera/el-beso-de-dios.jpg"
+            class="d-block w-25 h-auto"
+            alt="el beso de dios"
+          />
+          <img
+            src="./src/img/cartelera/emergencia-en-el-aire.jpg"
+            class="d-block w-25"
+            alt="emergencia-en-el-aire"
+          />
+          <img
+            src="./src/img/cartelera/la-chica-salvaje.jpg"
+            class="d-block w-25 h-auto"
+            alt="la-chica-salvaje"
+          />
+          <img
+            src="./src/img/cartelera/boonie-bears-regreso-a-la-tierra.jpg"
+            class="d-block w-25 h-auto"
+            alt="boonie-bears-regreso-a-la-tierra"
+          />
+          <img
+            src="./src/img/cartelera/olga.jpg"
+            class="d-block w-25 h-auto"
+            alt="olga"
+          />
+          <img
+            src="./src/img/cartelera/pasaje-al-paraiso.jpg"
+            class="d-block w-25 h-auto"
+            alt="pasaje-al-paraiso"
+          />
+          <img
+            src="./src/img/cartelera/olga.jpg"
+            class="d-block w-25"
+            alt="olga"
+          />
+        </div>
+      </section>
+      <section class="container pb-5">
+        <h4 class="text-body">PREVENTA / PRÓXIMOS ESTRENOS</h4>
+        <div class="d-flex justify-content-between gap-2 overflow-scroll">
+          <img
+            src="./src/img/cartelera/barbaro.jpg"
+            class="d-block w-25 h-auto"
+            alt="barbaro"
+          />
+          <img
+            src="./src/img/cartelera/el-beso-de-dios.jpg"
+            class="d-block w-25 h-auto"
+            alt="el beso de dios"
+          />
+          <img
+            src="./src/img/cartelera/emergencia-en-el-aire.jpg"
+            class="d-block w-25"
+            alt="emergencia-en-el-aire"
+          />
+          <img
+            src="./src/img/cartelera/la-chica-salvaje.jpg"
+            class="d-block w-25 h-auto"
+            alt="la-chica-salvaje"
+          />
+          <img
+            src="./src/img/cartelera/boonie-bears-regreso-a-la-tierra.jpg"
+            class="d-block w-25 h-auto"
+            alt="boonie-bears-regreso-a-la-tierra"
+          />
+          <img
+            src="./src/img/cartelera/olga.jpg"
+            class="d-block w-25 h-auto"
+            alt="olga"
+          />
+          <img
+            src="./src/img/cartelera/pasaje-al-paraiso.jpg"
+            class="d-block w-25 h-auto"
+            alt="pasaje-al-paraiso"
+          />
+          <img
+            src="./src/img/cartelera/olga.jpg"
+            class="d-block w-25"
+            alt="olga"
+          />
+        </div>
+      </section>
     </main>
 
     <footer class="bg-light footer">
-        <div class="container py-5 text-black-50">
-            <div class="d-flex justify-content-between align-content-center text-center">
-                <div class="w-25">
-                    <a class="navbar-brand" href="#">
-                        <img src="./src/img/logo.svg" alt="logo" class="footer__logo">
-                    </a>
-                </div>
-                <ul class="footer__nav">
-                    <li>Información Legal</li>
-                    <li>Acerca de Cineco</li>
-                    <li>Contáctanos PQRS</li>
-                    <li>Preguntas Frecuentes</li>
-                </ul>
-                <div class="w-25">
-                    <p>Siguenos en</p>
-                    <div class="d-flex gap-2 justify-content-center footer__social">
-                        <img src="./src/img/redes-sociales/facebook.svg" alt="facebook">
-                        <img src="./src/img/redes-sociales/twitter.svg" alt="facebook">
-                        <img src="./src/img/redes-sociales/instagram.svg" alt="facebook">
-                    </div>
-                </div>
+      <div class="container py-5 text-black-50">
+        <div
+          class="d-flex justify-content-between align-content-center text-center"
+        >
+          <div class="w-25">
+            <a class="navbar-brand" href="#">
+              <img src="./src/img/logo.svg" alt="logo" class="footer__logo" />
+            </a>
+          </div>
+          <ul class="footer__nav">
+            <li>Información Legal</li>
+            <li>Acerca de Nosotros</li>
+            <li>Radicar PQRS</li>
+            <li>Preguntas Frecuentes</li>
+          </ul>
+          <div class="w-25">
+            <p>Siguenos en</p>
+            <div class="d-flex gap-3 justify-content-center footer__social">
+              <a
+                href="https://www.facebook.com/CinemarkColombia"
+                target="_blank"
+              >
+                <img
+                  src="./src/img/redes-sociales/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a href="https://twitter.com/CinemarkCol?lang=es" target="_blank">
+                <img src="./src/img/redes-sociales/twitter.svg" alt="twitter" />
+              </a>
+              <a href="https://www.instagram.com/cinemarkcol" target="_blank">
+                <img
+                  src="./src/img/redes-sociales/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
             </div>
-            <p class="text-center mt-3">© 2022 Cinemark</p>
+          </div>
         </div>
+        <p class="text-center mt-3">© 2022 Cinemark</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
