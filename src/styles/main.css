@@ -1,19 +1,16 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
 header {
     width: 100%;
     overflow: hidden;
     background: #db0000;
     margin-bottom: 20px;
     display: flex;
-}
-
-p,
-ul {
-    margin: 0;
-}
-
-.center {
-    margin: auto;
-    overflow: hidden;
+    height: max-content;
 }
 
 header nav {
@@ -32,12 +29,74 @@ header nav a {
     font-weight: 400;
 }
 
+p,
+ul {
+    margin: 0;
+}
+
+.center {
+    margin: auto;
+    overflow: hidden;
+}
+
 .items a:hover {
     background-color: white;
     border-radius: 50px;
     color: #db0000;
 }
 
+.date > div {
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    border-radius: 0.3125rem;
+}
+
+.date > div.active {
+    background-color: rgb(220 38 38);
+    color: white;
+}
+
+.date > div:hover {
+    scale: 1.05;
+    box-shadow: rgba(0, 0, 0, 0.045) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.tag {
+    align-items: center;
+    background-color: rgb(226 232 240);
+    border-radius: 0.375em;
+    color: #4a4a4a;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2em;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    white-space: nowrap;
+}
+
+.tag.danger {
+    background-color: rgb(220 38 38);
+    color: white;
+}
+
+.tag.warning {
+    background-color: rgb(251 191 36);
+    color: rgb(40, 40, 40);
+}
+
+.break-word {
+    width: 50ch;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
 .footer {
     font-size: 0.875rem;
 }
@@ -78,6 +137,9 @@ header nav a {
     filter: opacity(0.5);
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
     .footer__item {
         row-gap: 1rem;
