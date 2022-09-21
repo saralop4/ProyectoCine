@@ -27,7 +27,12 @@ padding: 10px 20px;
 line-height: normal;
 font-size: 20px;
 font-weight: bold;
+}
 
+header nav a:hover{
+    background-color: white;
+    border-radius: 50px;
+    color: #DB0000;
 }
 .footer{
     font-size: .875rem;
