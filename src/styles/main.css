@@ -1,3 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #DB0000;
+    margin-bottom: 20px;
+}
+
+.center {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header nav{
+    float: right;
+    line-height: 200px;
+    }
+header nav a{
+display: inline-block;
+color: aliceblue;
+text-decoration: none;
+padding: 10px 20px;
+line-height: normal;
+font-size: 20px;
+font-weight: bold;
+
+}
 .footer{
     font-size: .875rem;
 }
@@ -33,4 +64,3 @@
 .footer__social{
     fill: red;
 }
-
