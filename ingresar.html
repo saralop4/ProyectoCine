@@ -57,7 +57,23 @@
         </nav>
     </header>
 
-    <main></main>
+    <main class="container py-5 w-50">
+        <form class="border p-5">
+            <h1 class="mb-4 text-center">Inicio de Sesión</h1>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3 col">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+
+            <div class="text-center w-100">
+                <button type="submit" class="btn btn-primary m-auto px-5 py-2">Ingresar</button>
+            </div>
+        </form>
+    </main>
     <footer class="bg-light footer">
         <div class="container py-5 text-black-50">
             <div class="d-flex justify-content-between align-content-center text-center">
