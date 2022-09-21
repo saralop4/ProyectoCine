@@ -1,61 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 header {
     width: 100%;
     overflow: hidden;
-    background: #DB0000;
+    background: #db0000;
     margin-bottom: 20px;
+    display: flex;
+}
+
+p,
+ul {
+    margin: 0;
 }
 
 .center {
-    width: 90%;
-    max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-header nav{
+
+header nav {
     float: right;
-    line-height: 200px;
-    }
-header nav a{
-display: inline-block;
-color: aliceblue;
-text-decoration: none;
-padding: 10px 20px;
-line-height: normal;
-font-size: 20px;
-font-weight: bold;
+    /* line-height: 200px; */
+    padding-block: 20px;
 }
 
-.items a:hover{
+header nav a {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.items a:hover {
     background-color: white;
     border-radius: 50px;
-    color: #DB0000;
-}
-.footer{
-    font-size: .875rem;
+    color: #db0000;
 }
 
-.footer__logo{
+.footer {
+    font-size: 0.875rem;
+}
+
+.footer__logo {
     height: 0.95rem;
 }
 
-.footer__nav{
+.footer__nav {
     list-style-type: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.footer__nav li{
+.footer__nav li {
     position: relative;
     padding: 0 1rem;
 }
 
-.footer__nav li:not(:last-child)::after{
-    content: '';
+.footer__nav li:not(:last-child)::after {
+    content: "";
     display: block;
     position: absolute;
     height: 1em;
@@ -66,6 +70,19 @@ font-weight: bold;
     background-color: currentColor;
 }
 
-.footer__social{
+.footer__social {
     fill: red;
+}
+
+.footer__social a img {
+    filter: opacity(0.5);
+}
+
+@media (max-width: 768px) {
+    .footer__item {
+        row-gap: 1rem;
+    }
+    .footer__item > * {
+        width: 100% !important;
+    }
 }
