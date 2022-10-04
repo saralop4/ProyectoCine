@@ -22,6 +22,8 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"
       ></script>
+      <script defer src="./src/js/utils.js" type="module"></script>
+      <script defer src="./src/js/registro.js" type="module"></script>
     </head>
   </head>
 
@@ -72,7 +74,7 @@
     </header>
     <main class="container py-5">
       <h1 class="mb-4">Formulario de Registro</h1>
-      <form>
+      <form id="formRegister">
         <div class="row">
           <div class="mb-3 col-12 col-md-4">
             <label for="nombres" class="form-label">Nombres</label>
@@ -143,8 +145,15 @@
             </label>
           </div>
         </div>
+        <div class="alert alert-danger" role="alert">
+          A simple danger alert—check it out!
+        </div>
         <div class="text-center w-100">
-          <button type="submit" class="btn btn-primary m-auto px-5 py-2">
+          <button
+            type="submit"
+            class="btn btn-primary m-auto px-5 py-2"
+            id="btnRegister"
+          >
             Registrarme
           </button>
         </div>
