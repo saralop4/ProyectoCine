@@ -88,7 +88,16 @@
         </div>
         <div class="mb-3 col-12 col-md-4">
           <label for="ciudad" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad" />
+          <input list="ciudades" class="form-control" id="ciudad" autocomplete="off" />
+          <datalist id="ciudades">
+            <option value="Armenia">
+            <option value="Bogota">
+            <option value="Bucaramanga">
+            <option value="Cali">
+            <option value="Medellin">
+            <option value="Santa Marta">
+            <option value="Soledad">
+          </datalist>
         </div>
       </div>
       <div class="row">
