@@ -1,16 +1,17 @@
 import { $, isNumber, sanitizeString, validateEmail } from './utils.js'
 
-const register = $('#formRegister')
+const register = $('#formRegister') 
 const btn = $('#btnRegister')
 const alert = $('#alertRegister')
 
-const response = {
-    error: true,
-    body: ''
-}
+
 
 const validarFormData = (event) => {
-    alert.innerHTML = ''
+    const response = {
+        error: true,
+         body: ''
+    }
+
     let nombre = event.target[0].value
     let apellido = event.target[1].value
     const genero = event.target[2].value
@@ -36,40 +37,47 @@ const validarFormData = (event) => {
     if ((email.trim() !== confirmEmail.trim()) || (email.length === 0 || confirmEmail.length === 0)) response.body += `<li>Los correos no coinciden</li>`
     if ((password.trim() !== confirmPassword.trim()) || (password.length === 0 || confirmPassword.length === 0)) response.body += `<li>Las contraseñas no coinciden</li>`
 
+    if (response.body === ''){
+        response.error = false
+        response.body = {
+            nombre,
+            apellido,
+            genero,
+            identificacion,
+            celular,
+            email,
+            ciudad,
+            password
+        }
+    }
+
     return response
 }
 
-const clearAlert = () => {
-    document.querySelector('#alertRegister').innerHTML = ""
-    alert.classList.remove('invisible')
-        alert.classList.add('visible')
-}
-
-const registerUser = (event) => {
+const registerUser = async (event) => {
     event.preventDefault()
     btn.disabled = true
-    clearAlert()
-
+   
     try {
         const { error, body } = validarFormData(event)
-        
 
         if (error) {
+            alert.classList.remove('invisible')
+            alert.classList.add('visible')
             alert.innerHTML = `
             <ul>${body}</ul>
          `
         }
 
-
+        
     } catch (error) {
         console.log({ error })
-        alert.textContent = error
         alert.classList.remove('invisible')
         alert.classList.add('visible')
+        alert.textContent = error
     } finally {
         btn.disabled = false
     }
-
 }
 
 register?.addEventListener("submit", registerUser, false)
