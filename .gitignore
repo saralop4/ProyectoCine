@@ -3,3 +3,5 @@ package-lock.json
 package.json
 dist
 .parcel-cache
+backend/env
+backend/**/__pycache__
