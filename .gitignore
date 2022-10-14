@@ -4,4 +4,5 @@ package.json
 dist
 .parcel-cache
 backend/env
+env
 backend/**/__pycache__

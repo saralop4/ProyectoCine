@@ -1,0 +1,174 @@
+{% extends './base.html' %}
+
+{% block main%}
+<main>
+    <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="{{url_for('static', filename='img/slide-1.jpg')}}" class="d-block w-100" alt="slide1" />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="{{url_for('static', filename='img/slide-2.jpg')}}" class="d-block w-100" alt="slide2" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <section class="container py-5">
+        <h1 class="text-body text-center mb-2">Estrenos de Película</h1>
+        <p class="m-auto w-50 mb-5 text-center text-body fst-italic">
+            Procede a elegir el día que deseas ver la película, se desplegará un listado con todos los estrenos
+            disponibles. Elige una hora, compra y a ¡DISFRUTAR!
+        </p>
+        <div class="d-flex justify-content-between gap-2 overflow-scroll">
+
+            <img src="{{url_for('static', filename='img/cartelera/barbaro.jpg')}}" class="d-block w-25 h-auto"
+                alt="barbaro" />
+            <img src="{{url_for('static', filename='img/cartelera/el-beso-de-dios.jpg')}}" class="d-block w-25 h-auto"
+                alt="el beso de dios" />
+            <img src="{{url_for('static', filename='img/cartelera/emergencia-en-el-aire.jpg')}}" class="d-block w-25"
+                alt="emergencia-en-el-aire" />
+            <img src="{{url_for('static', filename='img/cartelera/la-chica-salvaje.jpg')}}" class="d-block w-25 h-auto"
+                alt="la-chica-salvaje" />
+            <img src="{{url_for('static', filename='img/cartelera/boonie-bears-regreso-a-la-tierra.jpg')}}"
+                class="d-block w-25 h-auto" alt="boonie-bears-regreso-a-la-tierra" />
+            <img src="{{url_for('static', filename='img/cartelera/olga.jpg')}}" class="d-block w-25 h-auto"
+                alt="olga" />
+            <img src="{{url_for('static', filename='img/cartelera/pasaje-al-paraiso.jpg')}}" class="d-block w-25 h-auto"
+                alt="pasaje-al-paraiso" />
+        </div>
+    </section>
+
+    <section class="container mb-5 d-flex justify-content-between gap-2 border-bottom border-top date ">
+        <div class="text-center w-100 py-3 active">
+            <h5>Martes</h5>
+            <p>20 Sept 2022</p>
+        </div>
+        <div class="text-center w-100 py-3">
+            <h5>Miércoles</h5>
+            <p>21 Sept 2022</p>
+        </div>
+        <div class="text-center w-100 py-3">
+            <h5>Jueves</h5>
+            <p>22 Sept 2022</p>
+        </div>
+        <div class="text-center w-100 py-3">
+            <h5>Viernes</h5>
+            <p>23 Sept 2022</p>
+        </div>
+        <div class="text-center w-100 py-3">
+            <h5>Sábado</h5>
+            <p>24 Sept 2022</p>
+        </div>
+        <div class="text-center w-100 py-3">
+            <h5>Domingo</h5>
+            <p>25 Sept 2022</p>
+        </div>
+    </section>
+
+    <section class="container pb-5 d-flex flex-column gap-3">
+        <article class="d-flex gap-4">
+            <img src="{{url_for('static', filename='img/cartelera/dragon-ball-super-super-hero.jpg')}}" alt=""
+                loading="lazy" class="border border-light">
+            <div>
+                <h4>DRAGON BALL SUPER: SUPER</h4>
+                <p class="break-word">Son Goku destruyó en su momento a la Patrulla Roja. Ahora, ciertos individuos
+                    han decidido continuar con su legado y han
+                    creado a los androides definitivos: Gamma 1 y Gamma 2.
+                </p>
+                <p class="break-word mt-3">Estos dos androides se autoproclaman
+                    "superhéroes" y deciden
+                    atacar a Piccolo y a Gohan. ¿Cuál es el objetivo de la nueva Patrulla Roja? Ante un peligro
+                    inminente, ¡llega el momento
+                    del despertar del Superhéroe!.</p>
+                <div class="d-flex my-3 gap-3">
+                    <span class="tag danger"> +7 anos</span>
+                    <span class="tag"> 100 minutos</span>
+                    <span class="tag warning"> 2D Doblada</span>
+                </div>
+                <footer>
+                    <h5>Horarios disponibles</h5>
+                    <div class="d-flex my-3 gap-3">
+                        <span class="tag">15:45</span>
+                        <span class="tag">18:25</span>
+                        <span class="tag">21:05</span>
+                    </div>
+                    <small class="fst-italic">* Los horarios aquí expuestos representan el inicio de cada
+                        función</small>
+                </footer>
+            </div>
+        </article>
+        <article class="d-flex gap-4">
+            <img src="{{url_for('static', filename='img/cartelera/dragon-ball-super-super-hero.jpg')}}" alt=""
+                loading="lazy" class="border border-light">
+            <div>
+                <h4>DRAGON BALL SUPER: SUPER</h4>
+                <p class="break-word">Son Goku destruyó en su momento a la Patrulla Roja. Ahora, ciertos individuos
+                    han decidido continuar con su legado y han
+                    creado a los androides definitivos: Gamma 1 y Gamma 2.
+                </p>
+                <p class="break-word mt-3">Estos dos androides se autoproclaman
+                    "superhéroes" y deciden
+                    atacar a Piccolo y a Gohan. ¿Cuál es el objetivo de la nueva Patrulla Roja? Ante un peligro
+                    inminente, ¡llega el momento
+                    del despertar del Superhéroe!.</p>
+                <div class="d-flex my-3 gap-3">
+                    <span class="tag danger"> +7 anos</span>
+                    <span class="tag"> 100 minutos</span>
+                    <span class="tag warning"> 2D Doblada</span>
+                </div>
+                <footer>
+                    <h5>Horarios disponibles</h5>
+                    <div class="d-flex my-3 gap-3">
+                        <span class="tag">15:45</span>
+                        <span class="tag">18:25</span>
+                        <span class="tag">21:05</span>
+                    </div>
+                    <small class="fst-italic">* Los horarios aquí expuestos representan el inicio de cada
+                        función</small>
+                </footer>
+            </div>
+        </article>
+        <article class="d-flex gap-4">
+            <img src="{{url_for('static', filename='img/cartelera/dragon-ball-super-super-hero.jpg')}}" alt=""
+                loading="lazy" class="border border-light">
+            <div>
+                <h4>DRAGON BALL SUPER: SUPER</h4>
+                <p class="break-word">Son Goku destruyó en su momento a la Patrulla Roja. Ahora, ciertos individuos
+                    han decidido continuar con su legado y han
+                    creado a los androides definitivos: Gamma 1 y Gamma 2.
+                </p>
+                <p class="break-word mt-3">Estos dos androides se autoproclaman
+                    "superhéroes" y deciden
+                    atacar a Piccolo y a Gohan. ¿Cuál es el objetivo de la nueva Patrulla Roja? Ante un peligro
+                    inminente, ¡llega el momento
+                    del despertar del Superhéroe!.</p>
+                <div class="d-flex my-3 gap-3">
+                    <span class="tag danger"> +7 anos</span>
+                    <span class="tag"> 100 minutos</span>
+                    <span class="tag warning"> 2D Doblada</span>
+                </div>
+                <footer>
+                    <h5>Horarios disponibles</h5>
+                    <div class="d-flex my-3 gap-3">
+                        <span class="tag">15:45</span>
+                        <span class="tag">18:25</span>
+                        <span class="tag">21:05</span>
+                    </div>
+                    <small class="fst-italic">* Los horarios aquí expuestos representan el inicio de cada
+                        función</small>
+                </footer>
+            </div>
+        </article>
+    </section>
+</main>
+
+{% endblock %}

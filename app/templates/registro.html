@@ -1,0 +1,102 @@
+{% extends './base.html' %}
+
+{% block main%}
+<main class="container py-5">
+  <h1 class="mb-4">Formulario de Registro</h1>
+  <form id="formRegister" method="post" action="/registro">
+    <div class="row">
+      <div class="mb-3 col-12 col-md-4">
+        <label for="nombres" class="form-label">Nombres</label>
+        <input type="text" class="form-control" name="nombres" />
+      </div>
+      <div class="mb-3 col-12 col-md-4">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" name="apellidos" />
+      </div>
+      <div class="mb-3 col-12 col-md-4">
+        <label for="genero" class="form-label">Genero</label>
+        <select name="genero" class="form-select">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Prefiero no decir">Prefiero no decir</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3 col-12 col-md-4">
+        <label for="nDocumento" class="form-label">Número de Documento</label>
+        <input type="text" class="form-control" name="nDocumento" />
+      </div>
+      <div class="mb-3 col-12 col-md-4">
+        <label for="celular" class="form-label">Celular</label>
+        <input type="tel" class="form-control" name="celular" />
+      </div>
+      <div class="mb-3 col-12 col-md-4">
+        <label for="ciudad" class="form-label">Ciudad</label>
+        <input list="ciudades" class="form-control" name='ciudad' autocomplete="off" />
+        <datalist id="ciudades">
+          <option value="Armenia">
+          <option value="Bogota">
+          <option value="Bucaramanga">
+          <option value="Cali">
+          <option value="Medellin">
+          <option value="Santa Marta">
+          <option value="Soledad">
+        </datalist>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3 col-12 col-md-6">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" name="email" />
+      </div>
+      <div class="mb-3 col-12 col-md-6">
+        <label for="confirmarEmail" class="form-label">Confirmar Correo Electrónico</label>
+        <input type="email" class="form-control" name="confirmarEmail" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3 col-12 col-md-6">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" name='password' />
+      </div>
+      <div class="mb-3 col-12 col-md-6">
+        <label for="confirmarPassword" class="form-label">Confirmar Contraseña</label>
+        <input type="password" class="form-control" name='confirmarPassword' />
+      </div>
+    </div>
+    <div class="col-12 mb-4">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck">
+          Acepto Términos y Condiciones y politicas de proteccion de datos.
+        </label>
+      </div>
+    </div>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+    {% if errors %}
+    {%- for msg in errors %}
+    <div class="alert alert-danger" role="alert">
+      <h5>{{msg}}</h5>
+    </div>
+    {% endfor -%}
+    {% endif %}
+    {% endwith %}
+
+    {% with errors = get_flashed_messages(category_filter=["success"]) %}
+    {% if errors %}
+    {%- for msg in errors %}
+    <div class="alert alert-success" role="alert">
+      <h5>{{msg}}</h5>
+    </div>
+    {% endfor -%}
+    {% endif %}
+    {% endwith %}
+    <div class="text-center w-100">
+      <button type="submit" class="btn btn-primary m-auto px-5 py-2" id="btnRegister">
+        Registrarme
+      </button>
+    </div>
+  </form>
+</main>
+{% endblock %}

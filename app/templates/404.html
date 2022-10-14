@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+
+{% block main%}
+<main class="container">
+    <article class="notFounded">
+        <h1>Opps... No hemos encontrado la pagina</h1>
+        <p>La pagina no fue encontrada, te sugerimos ir a la pagina principal a través de el siguiente botón</p>
+        <a href="{{url_for('init')}}" class="btn btn-danger px-4 mt-4 py-2">Regresar a la página principal</a>
+    </article>
+</main>
+{%endblock%}
