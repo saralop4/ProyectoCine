@@ -5,6 +5,42 @@
 
 # Proyecto Cinemark - Gran Plaza El Ensueño
 
+## Create a virtual env
+
+Cuando descargamos el projecto debemos crear un ambiente virtual a través del siguiente comando
+
+```python
+python3 -m venv env
+```
+
+Luego activamos nuestro ambiente virtual
+
+```bash
+# linux
+. env/bin/activate 
+
+# windows
+./env/bin/activate 
+```
+
+### Install requirements
+
+Debemos instalar todas las dependencias necesarias para que el projecto funcione, utilizando el comando
+
+```python
+pip install -r requirement.txt
+```
+
+### Initial server
+
+Para iniciar el servidor de manera local debemos utilizar el siguiente comando en la terminal
+
+```python
+flask --app ./src/app --debug run 
+```
+
+_Nota: Debe ubicarse en el carpeta raiz (backend)_
+
 ## Problematica
 
 Gran Plaza El Ensueño - Cinemark requiere un sistema para la venta de entradas a las películas disponibles que posee en cartelera.
